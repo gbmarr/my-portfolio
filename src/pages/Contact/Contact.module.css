@@ -1,0 +1,46 @@
+.contact {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+}
+
+.formContainer, .networkContainer {
+    width: 45%;
+    height: 40vh;
+    background-color: var(--black);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 0px 20px var(--black);
+}
+
+.networkContainer {
+    height: 30vh;
+    width: 30%;
+    background-color: var(--extra-light-green);
+    align-content: center;
+}
+
+.formTitle {
+    width: 100%;
+    background-color: var(--white);
+    color: var(--black);
+    font: 2em 'Teko', sans-serif;
+    padding: .5em;
+}
+
+.formContainer {
+    position: relative;
+}
+
+.button {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: .3em;
+    background-color: var(--base-green);
+    color: var(--black);
+    border: none;
+    font-weight: 500;
+}
