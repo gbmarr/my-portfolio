@@ -1,0 +1,82 @@
+.project {
+    position: relative;
+    width: 70%;
+    height: 350px;
+    border-radius: 10px;
+    margin: 1em auto;
+    background: linear-gradient(90deg, var(--extra-light-green) 40%, var(--black));
+    box-shadow: 0px 0px 10px var(--black);
+    overflow: hidden;
+    animation: fade-in .5s ease-in;
+}
+
+.title {
+    width: 100%;
+    padding: .5em;
+    background-color: var(--black);
+    color: var(--light-green);
+    font: 2em 'Teko', sans-serif;
+}
+
+.projectDataContainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1em;
+}
+
+.description {
+    width: 50%;
+    color: var(--black);
+    font-size: .8em;
+}
+
+.techContainer {
+    width: 40%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+}
+
+.tech {
+    width: 18%;
+    background-color: var(--white);
+    padding: .5em;
+    border-radius: 10px;
+}
+
+.btnContainer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: var(--black);
+    display: flex;
+}
+
+.btn {
+    width: 50%;
+    margin: auto;
+    padding: .5em;
+    color: var(--white);
+    text-align: center;
+    font-weight: bold;
+}
+
+.repo {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

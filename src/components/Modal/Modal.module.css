@@ -1,0 +1,90 @@
+.modal {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    animation: fade-in .5s ease;
+}
+
+.modalContent {
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    background-color: var(--black);
+    border-radius: 10px;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.date {
+    position: absolute;
+    margin: .5em;
+    color: var(--black);
+    font: 1.2em 'Teko', sans-serif;
+}
+
+.image {
+    width: 100%;
+    height: 30%;
+    object-fit: contain;
+    background-color: var(--white);
+}
+
+.header {
+    width: 100%;
+    padding: .3em;
+    background-color: var(--black);
+}
+
+.institution {
+    font-family: 'Teko', sans-serif;
+    color: var(--light-green);
+    position: absolute;
+    margin: 0 .5em;
+}
+
+.title {
+    font: 2em 'Teko', sans-serif;
+    color: var(--base-green);
+    margin: .5em auto;
+}
+
+.body {
+    width: 100%;
+    height: 50%;
+}
+
+.description {
+    width: 90%;
+    margin: auto;
+    font-style: italic;
+}
+
+.button {
+    position: absolute;
+    color: var(--black);
+    background-color: var(--white);
+    font: 1.2em 'Teko', sans-serif;
+    padding: .3em;
+    border-radius: 10px;
+    border: none;
+    bottom: 1em;
+    right: 1em;
+    box-shadow: 0px 0px 20px var(--black);
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
