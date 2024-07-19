@@ -2,6 +2,7 @@
     position: relative;
     width: 100vw;
     height: 25vh;
+    animation: blurring 1s ease-in;
 }
 
 .bannerTitle {
@@ -22,4 +23,10 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@keyframes blurring {
+    from {
+        filter: blur(10px);
+    } to {}
 }

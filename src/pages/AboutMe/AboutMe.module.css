@@ -1,0 +1,12 @@
+.aboutme {
+    gap: 1em;
+    align-content: center;
+}
+
+.aboutText {
+    margin: 1em auto;
+    width: 70%;
+    color: var(--black);
+    font-weight: bold;
+    font-style: italic;
+}
