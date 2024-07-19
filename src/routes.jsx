@@ -6,18 +6,20 @@ import Projects from './pages/Projects';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
 import Error from './pages/Error';
+import Header from "./components/Header";
 
 function AppRouter(){
     return(
-        <BrowserRouter>
+        <BrowserRouter basename="/">
+            <Header />
             <Routes>
-                <Route path="/" element={<Home />} />
+                <Route index element={<Home />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/academic" element={<Academic />} />
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/aboutme" element={<AboutMe />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="*" element={<Error />} />
+                <Route  basename="/"path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
