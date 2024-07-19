@@ -1,5 +1,5 @@
-function Button({styles, content, type}){
-    return <button className={styles} type={type}>{content}</button>
+function Button({styles, content, type, event}){
+    return <button onClick={event} className={styles} type={type}>{content}</button>
 }
 
 export default Button;
