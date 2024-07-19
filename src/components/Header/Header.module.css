@@ -11,4 +11,36 @@
     width: 40%;
     font: 3em 'Teko', sans-serif;
     color: var(--extra-light-green);
+    animation: titlelight 2s ease .5s infinite alternate;
+}
+
+.nav {
+    width: 40%;
+}
+
+.list {
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item > a {
+    font: 1.2em 'Teko', sans-serif;
+    color: var(--light-green);
+    border-bottom: 1px solid var(--light-green);
+}
+
+.item > a:hover {
+    color: var(--white);
+    border-bottom: 1px solid var(--base-green);
+    transition: all 1s ease;
+}
+
+/* ANIMATIONS */
+@keyframes titlelight {
+    from {
+        color: var(--black);
+    } to {}
 }
