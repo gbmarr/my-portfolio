@@ -1,0 +1,26 @@
+.presentation {
+    animation: fade-in 1s ease-in;
+}
+
+.containerTitle {
+    font: 2em 'Teko', sans-serif;
+    color: var(--black);
+}
+
+.presentationText {
+    width: 50%;
+    margin: 1em;
+    padding: 1em;
+    text-align: end;
+    color: var(--black);
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

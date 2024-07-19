@@ -1,0 +1,27 @@
+.skillContainer {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    gap: 2.5em;
+    animation: fade-in 1s ease-in;
+}
+
+.skillImg {
+    width: 18%;
+    padding: 1em;
+    background-color: var(--white);
+    box-shadow: 0px 0px 20px var(--black);
+    border-radius: 10px;
+}
+
+/* ANIMATIONS */
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

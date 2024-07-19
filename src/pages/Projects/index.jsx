@@ -1,10 +1,9 @@
 import styles from './Projects.module.css';
-import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Container from '../../components/Container';
 import Project from '../../components/Project';
 import Footer from '../../components/Footer';
-import bgBanner from '../../assets/img/bg-portfolio-2.webp';
+import bgBanner from '../../assets/img/bg-portfolio-projects.webp';
 import { useEffect, useState } from 'react';
 
 function Projects(){
@@ -21,12 +20,11 @@ function Projects(){
 
     return(
         <>
-        <Header />
         <Banner img={bgBanner} content="Proyectos / Prácticas" />
         <Container section={styles.projects}
         content={
             <>
-            {projects.map((project) => <Project project={project} /> )}
+            {projects.map((project) => <Project project={project} key={project.id} /> )}
             </>
         }
         />
