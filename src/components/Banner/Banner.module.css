@@ -2,7 +2,7 @@
     position: relative;
     width: 100vw;
     height: 25vh;
-    animation: blurring 1s ease-in;
+    animation: blurring .5s ease-in;
 }
 
 .bannerTitle {
@@ -25,6 +25,27 @@
     object-fit: cover;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .bannerTitle {
+        left: 25%;
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 768px) {
+    .bannerTitle {
+        left: 30%;
+    }
+}
+
+@media (max-width: 430px) {
+    .bannerTitle {
+        left: 35%;
+    }
+}
+
+/* ANIMATIONS */
 @keyframes blurring {
     from {
         filter: blur(10px);

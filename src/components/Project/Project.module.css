@@ -71,6 +71,36 @@
     color: var(--black);
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .project {
+        width: 90%;
+    }
+
+    .projectDataContainer {
+        padding: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .project {
+        height: fit-content;
+    }
+
+    .projectDataContainer {
+        flex-direction: column;
+    }
+
+    .description, .techContainer {
+        width: 90%;
+    }
+
+    .tech {
+        width: 20%;
+    }
+}
+
 /* ANIMATIONS */
 @keyframes fade-in {
     from {

@@ -1,8 +1,15 @@
 .container {
     width: 100%;
     max-width: 100%;
-    min-height: 55vh;
+    min-height: 60vh;
     padding: 1em;
     padding-bottom: 5em;
     background: linear-gradient(90deg, var(--extra-light-green), var(--base-green));
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .container {
+        height: 70vh;
+    }
 }

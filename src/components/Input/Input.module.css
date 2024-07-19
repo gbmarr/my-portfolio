@@ -24,3 +24,16 @@
     border: none;
     border-bottom: 1px solid var(--light-green);
 }
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .inputContainer {
+        flex-direction: column;
+        align-items: start;
+        gap: .5em;
+    }
+
+    .input {
+        width: 90%;
+    }
+}

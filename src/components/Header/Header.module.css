@@ -38,6 +38,29 @@
     transition: all 1s ease;
 }
 
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .headerTitle {
+        font-size: 2em;
+    }
+
+    .item > a {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .headerTitle {
+        font-size: 1.5em;
+    }
+}
+
+@media (max-width: 430px) {
+    .headerTitle {
+        font-size: 1em;
+    }
+}
+
 /* ANIMATIONS */
 @keyframes titlelight {
     from {

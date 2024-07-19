@@ -7,7 +7,7 @@
     border-radius: 10px;
     box-shadow: 0px 0px 30px var(--black);
     overflow: hidden;
-    animation: fade-in 1s ease-in;
+    animation: fade-in .5s ease-in;
 }
 
 .image {
@@ -87,6 +87,13 @@
     cursor: pointer;
     background-color: var(--base-green);
     transition: all .5s ease-in;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .card {
+        width: 90%;
+    }
 }
 
 /* ANIMATIONS */

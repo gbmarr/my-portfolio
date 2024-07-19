@@ -1,0 +1,22 @@
+.network {
+    height: fit-content;
+    width: 95%;
+    padding: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: .5em;
+    background-color: var(--black);
+    border-radius: 10px;
+    margin: .5em;
+}
+
+.network p {
+    font-style: italic;
+    font-weight: 500;
+}
+
+.network:hover {
+    background-color: var(--dark-green);
+    transition: all 1s ease;
+}

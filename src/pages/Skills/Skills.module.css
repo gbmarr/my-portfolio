@@ -16,6 +16,12 @@
     border-radius: 10px;
 }
 
+@media (max-width: 1000px) {
+    .skillImg {
+        width: 30%;
+    }
+}
+
 /* ANIMATIONS */
 @keyframes fade-in {
     from {

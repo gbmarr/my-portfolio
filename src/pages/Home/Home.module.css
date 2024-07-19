@@ -15,6 +15,13 @@
     color: var(--black);
 }
 
+/*  MEDIA QUERIES */
+@media (max-width: 1000px) {
+    .presentationText {
+        width: 90%;
+    }
+}
+
 /* ANIMATIONS */
 @keyframes fade-in {
     from {
