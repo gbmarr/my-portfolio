@@ -1,0 +1,12 @@
+.error {
+    align-content: center;
+}
+
+.errorText {
+    width: 80%;
+    height: 20vh;
+    margin: auto;
+    padding: 1em;
+    background-color: var(--black);
+    border-radius: 10px;
+}
