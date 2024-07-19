@@ -5,7 +5,7 @@ function NavBar({routes, styles}){
         <>
         <nav className={styles.nav}>
             <ul className={styles.list}>
-                {routes.map((route) => <li className={styles.item}><Link to={route.path}>{route.name}</Link></li>)}
+                {routes.map((route, index) => <li key={index} className={styles.item}><Link to={route.path}>{route.name}</Link></li>)}
             </ul>
         </nav>
         </>
