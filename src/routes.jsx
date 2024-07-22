@@ -19,7 +19,7 @@ function AppRouter(){
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/aboutme" element={<AboutMe />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route  basename="/"path="*" element={<Error />} />
+                <Route path="*" element={<Error />} />
             </Routes>
         </BrowserRouter>
     )
