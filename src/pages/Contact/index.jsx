@@ -1,6 +1,5 @@
 import styles from './Contact.module.css';
 import Banner from '../../components/Banner';
-import Header from '../../components/Header';
 import bgBanner from '../../assets/img/bg-portfolio-contact.webp';
 import Footer from '../../components/Footer';
 import Container from '../../components/Container';
@@ -18,7 +17,6 @@ function Contact(){
 
     return(
         <>
-        <Header />
         <Banner img={bgBanner} content="Contacto" />
         <Container section ={styles.contact}
         content={

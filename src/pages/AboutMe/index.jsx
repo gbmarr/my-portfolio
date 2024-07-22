@@ -1,5 +1,4 @@
 import styles from './AboutMe.module.css';
-import Header from '../../components/Header';
 import Banner from '../../components/Banner';
 import Container from '../../components/Container';
 import Footer from '../../components/Footer';
@@ -9,7 +8,6 @@ import Text from '../../components/Text';
 function AboutMe(){
     return(
         <>
-        <Header />
         <Banner img={bgBanner} content="Sobre Mí" />
         <Container section={styles.aboutme}
         content={
